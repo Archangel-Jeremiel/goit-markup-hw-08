@@ -1,0 +1,10 @@
+.footer {
+    background-color: var(--hero-footer-background-color);
+    padding: 60px 0px;
+}
+
+.container-footer {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+}

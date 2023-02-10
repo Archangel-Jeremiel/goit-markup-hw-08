@@ -1,0 +1,51 @@
+.teem {
+  @extend %section;
+  background-color: var(--second-background-color);
+}
+
+.container-teem {
+  @extend %container;
+}
+
+.list-teem {
+  @extend %list;
+  display: flex;
+  padding-left: 0px;
+}
+
+.list-teem__card {
+  background-color: var(--primary-background-color);
+  text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+
+.list-teem__card {
+  &:not(:first-child) {margin-left: 30px;}
+}
+
+.list-teem__fhotos-teem {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.teem-card {
+  padding: 20px 32px;
+}
+
+.teem-card__name {
+  margin-bottom: 16px;
+
+  color: var(--primary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.teem-card__text {
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+}

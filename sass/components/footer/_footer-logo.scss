@@ -1,0 +1,15 @@
+.container-address__logo {
+    margin-bottom: 20px;
+    display: inline-block;
+  
+    font-family: var(--font-logo);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-text-color);
+    text-decoration: none;
+  }
+  
+  .container-address__logo--accent {
+    color: var(--accentt-color);
+  }
