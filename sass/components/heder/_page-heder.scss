@@ -4,6 +4,6 @@
 
 .container-header {
   @extend %container;
-  display: flex;
+  display: block;
   align-items: center;
 }

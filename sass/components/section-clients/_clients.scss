@@ -6,7 +6,11 @@
 .clients-list {
   @extend %list;
   padding-left: 0;
-  display: flex;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  
 }
 
 .container-clients{

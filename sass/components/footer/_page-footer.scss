@@ -5,6 +5,6 @@
 
 .container-footer {
     @extend %container;
-    display: flex;
+    display: block;
     align-items: baseline;
 }

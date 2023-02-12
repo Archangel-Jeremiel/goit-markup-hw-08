@@ -13,6 +13,14 @@
   background-position: center;
   text-align: center;
   padding: 200px 0px;
+  outline: 1px solid orangered;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    width: auto;
+    height: 400px;
+  }
 }
 
 .container-hero {

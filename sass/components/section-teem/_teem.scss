@@ -9,8 +9,12 @@
 
 .list-teem {
   @extend %list;
-  display: flex;
+  display: block;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  
 }
 
 .list-teem__card {

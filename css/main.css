@@ -53,21 +53,7 @@ button {
   text-align: center;
 }
 
-/*Скрываем нужные заголовки */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
+/* @import "./utils/visualy-hidden"; */
 .clients, .teem, .area-​​work, .advantage {
   padding: 94px 0px;
 }
@@ -78,13 +64,19 @@ button {
 }
 
 .container-filter, .container-footer, .container-clients, .container-teem, .area-​​work__container, .container-advantage, .container-hero, .container-header {
-  width: 1200px;
+  /* width: 1200px; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid orangered;
 }
 
+@media screen and (min-width: 480px) {
+  .container-filter, .container-footer, .container-clients, .container-teem, .area-​​work__container, .container-advantage, .container-hero, .container-header {
+    width: 480;
+  }
+}
 .list-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,9 +125,7 @@ button {
 }
 
 .container-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -159,9 +149,8 @@ button {
 }
 
 .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*   display: flex; */
+  display: block;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
 }
@@ -265,8 +254,15 @@ button {
   background-position: center;
   text-align: center;
   padding: 200px 0px;
+  outline: 1px solid orangered;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    width: auto;
+    height: 400px;
+  }
+}
 .container-hero__title {
   width: 696px;
   margin: 0px auto 30px;
@@ -315,8 +311,10 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  /*   width: 528px;
+    height: 581px; */
+  width: 260px;
+  height: 200px;
   padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -563,9 +561,7 @@ button {
 }
 
 .advantage-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding-left: 0px;
 }
 
@@ -606,9 +602,7 @@ button {
 }
 
 .area-​​work-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding-left: 0px;
 }
 
@@ -655,9 +649,7 @@ button {
 }
 
 .list-teem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   padding-left: 0px;
 }
 
@@ -699,9 +691,7 @@ button {
 
 .clients-list {
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .clients-list__item {
@@ -752,9 +742,7 @@ button {
 }
 
 .container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -847,9 +835,7 @@ button {
 }
 
 .subscription-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -955,9 +941,7 @@ button {
 }
 
 .list-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*   display: flex; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
