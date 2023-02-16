@@ -1,9 +1,21 @@
 .list-filter {
   @extend %list;
-/*   display: flex; */
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0px;
-  margin: 0px 0px 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:468px) {
+  .list-filter__item {
+    &:nth-last-child(-n + 2) {margin-top: 15px;}
+  }
+}
+
+@media screen and (max-width:599px) {
+  .list-filter__item {
+    &:nth-last-child(1) {margin-top: 15px;}
+  }
 }
 
 .list-filter__item {

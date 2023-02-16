@@ -1,6 +1,5 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
   margin: 0px auto;
   background-color: #2f303a;
   background-image: linear-gradient(
@@ -12,7 +11,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 0px;
+  padding: 118px 60px;
   outline: 1px solid orangered;
 }
 
@@ -24,19 +23,18 @@
 }
 
 .container-hero {
-  @extend %container;
 }
 
 .container-hero__title {
-  width: 696px;
-  margin: 0px auto 30px;
+  margin-bottom: 30px;
 
   color: var(--white-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .container-hero__button {

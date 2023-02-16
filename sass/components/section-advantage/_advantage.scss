@@ -10,17 +10,22 @@
 
 .advantage-list {
   @extend %list;
-  display: block;
   padding-left: 0px;
 }
 
 .advantage-list__item {
-  width: 270px;
+  width: auto;
+  outline: 1px solid orangered;
+}
+@media screen and (min-width:480px) {
+  .advantage-list__item {
+    &:not(:last-child) {margin-bottom: 30px;}
+  }
 }
 
-.advantage-list__item {
+/* .advantage-list__item {
   &:not(:first-child) {margin-left: 30px;}
-}
+} */
 
 .advantage-list__icon {
   display: flex;
@@ -41,6 +46,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantage-list__text {

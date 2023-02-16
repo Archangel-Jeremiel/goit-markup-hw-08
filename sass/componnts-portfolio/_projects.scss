@@ -9,17 +9,16 @@
 }
 
 .list-projects__item {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.list-projects__item {
+/* .list-projects__item {
   &:nth-last-child(-n + 3) {margin-bottom: 0px;}
 }
 
 .list-projects__item {
   &:nth-child(3n + 3) {margin-right: 0px;}
-}
+} */
 
 .list-projects__link {
   display: block;
