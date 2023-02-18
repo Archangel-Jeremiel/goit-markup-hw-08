@@ -1,0 +1,11 @@
+.social-heder {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.social-heder_item {
+    display: flex;
+}

@@ -1,17 +1,16 @@
 .list-contacts {
   @extend %list;
-  display: inline-flex;
-  margin-left: auto;
+  display: inline-block;
+  margin-top: auto;
   padding-left: 0px;
 }
 
 .list-contacts__item {
-  &:not(:last-child) {margin-right: 50px;}
+  &:not(:last-child) {margin-bottom: 32px;}
 }
 
 .link-contacts {
   display: flex;
-  padding: 35px 0px;
   align-items: center;
   fill: currentColor;
 
