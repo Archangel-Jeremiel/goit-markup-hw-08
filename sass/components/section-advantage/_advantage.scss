@@ -15,12 +15,8 @@
 
 .advantage-list__item {
   width: auto;
-  outline: 1px solid orangered;
-}
-@media screen and (min-width:480px) {
-  .advantage-list__item {
-    &:not(:last-child) {margin-bottom: 30px;}
-  }
+  &:not(:last-child) {margin-bottom: 30px;}
+  outline: 1px solid orange;
 }
 
 /* .advantage-list__item {

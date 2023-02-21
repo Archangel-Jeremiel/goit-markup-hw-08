@@ -1,5 +1,7 @@
 .container-filter {
-  @extend %container;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
 }
 .list-projects {
   @extend %list;

@@ -24,47 +24,82 @@
         <a href="./index.html" class="container-header__logo"
           ><span class="container-header__accent">Web</span>Studio</a
         >
-        <nav class="nav">
-          <ul class="list nav-list ">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студія</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфоліо</a>
-            </li>
-            <li class="nav-list__item">
-              <a href="#address" class="nav-list__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="list list-contacts">
-          <li class="list-contacts__item">
-            <a href="mailto:info@devstudio.com" class="link-contacts">
-              <svg 
-                width="16" 
-                height="12" 
-                class="link-contacts__icon"
-                fill="currentColor"
+        <div class="menu-conteiner" id="menu-conteiner" data-menu>
+            <nav class="nav">
+              <ul class="nav-list ">
+                <li class="nav-list__item">
+                  <a href="./index.html" class="nav-list__link nav-list__link--current">Студія</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
+                </li>
+                <li class="nav-list__item">
+                  <a href="#address" class="nav-list__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="list-contacts">
+              <li class="list-contacts__item">
+                <a href="tel:+380961111111" class="link-contacts contacts-phone">
+                  <svg
+                    width="10"
+                    height="16"
+                    class="link-contacts__icon"
+                    fill="currentColor"
+                    >
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
                 >
-                <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list-contacts__item">
-            <a href="tel:+380961111111" class="link-contacts">
-              <svg
-                width="10"
-                height="16"
-                class="link-contacts__icon"
-                fill="currentColor"
+              </li>
+              <li class="list-contacts__item">
+                <a href="mailto:info@devstudio.com" class="link-contacts contacts-mail">
+                  <svg 
+                    width="16" 
+                    height="12" 
+                    class="link-contacts__icon"
+                    fill="currentColor"
+                    >
+                    <use href="./images/icons.svg/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
                 >
-                <use href="./images/icons.svg/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
+              </li>
+            </ul>
+            <ul class="social-heder">
+              <li class="social-heder__item">
+                <a href="" class="social-heder__link">Instagram</a>
+                <svg width="1" height="22" class="social-heder__icon">
+                  <rect width="1" height="22" fill="rgba(33, 33, 33, 0.2)" x="0" y="0"/>
+                </svg>
+              </li>
+              <li class="social-heder__item">
+                <a href="" class="social-heder__link">Twitter</a>
+                <svg width="1" height="22" class="social-heder__icon">
+                  <rect width="1" height="22" fill="rgba(33, 33, 33, 0.2)" x="0" y="0"/>
+                </svg>
+              </li>
+              <li class="social-heder__item">
+                <a href="" class="social-heder__link">Facebook</a>
+                <svg width="1" height="22" class="social-heder__icon">
+                  <rect width="1" height="22" fill="rgba(33, 33, 33, 0.2)" x="0" y="0"/>
+                </svg>
+              </li>
+              <li class="social-heder__item">
+                <a href="" class="social-heder__link">LinkedIn</a>
+              </li>
+            </ul>
+        </div>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg
+            width="24"  
+            height="16"
+            aria-label="Переключатель мобильного меню"
             >
-          </li>
-        </ul>
+            <use href="./images/icons.svg/sprite.svg#icon-menu" class="icon-menu"></use>
+            <use href="./images/icons.svg/sprite.svg#icon-cross" class="icon-cross"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main-portfolio">
@@ -404,5 +439,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -5,13 +5,22 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 
-    background-color: palegoldenrod;
+    background-color: #FFFFFF;
     padding: 48px 40px;
     font-size: 20px;
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:768px) {
+        position: static;
+        padding: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -20,7 +29,12 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
     padding: 22px;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
 .menu-button .icon-menu {
