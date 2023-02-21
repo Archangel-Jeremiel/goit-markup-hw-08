@@ -1,7 +1,7 @@
 /* Секция "Подход к работе" */
 .advantage {
   @extend %section;
-  padding-bottom: 0px;
+  padding: 60px 15px;
 }
 
 .container-advantage {
@@ -11,12 +11,34 @@
 .advantage-list {
   @extend %list;
   padding-left: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .advantage-list__item {
   width: auto;
-  &:not(:last-child) {margin-bottom: 30px;}
-  outline: 1px solid orange;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {margin-bottom: 30px;}
+    outline: 1px solid orange;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    height: 223px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
 }
 
 /* .advantage-list__item {
@@ -31,9 +53,7 @@
   justify-content: center;
   background-color: #f5f4fa;
 }
-@media screen and (min-width: 480px) {
-  
-}
+
 
 .advantage-list__title {
   margin-bottom: 10px;
