@@ -1,10 +1,10 @@
 .header {
-/*   position: relative; */
+  @extend %section;
   border-bottom: 1px solid #ececec;
+  padding: 0;
 }
 
 .container-header {
-  @extend %container;
   display: block;
   align-items: center;
 

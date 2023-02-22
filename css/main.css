@@ -69,15 +69,21 @@ button {
   margin: -1px;
 }
 
-/* Добавим общий стиль на списки, кнопки*/
-.list-projects, .list-filter, .address__list, .clients-list, .list-teem, .area-​​work-list, .advantage-list, .social-heder, .list-contacts, .nav-list, .list-social {
-  list-style: none;
-}
-
-.container-footer, .container-clients, .container-teem, .area-​​work__container, .container-advantage, .container-header {
+.footer, .clients, .teem, .area-​​work, .advantage, .header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 60px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .footer, .clients, .teem, .area-​​work, .advantage, .header {
+    padding: 94px 15px;
+  }
+}
+
+/* Добавим общий стиль на списки, кнопки*/
+.list-projects, .list-filter, .address__list, .clients-list, .list-teem, .area-​​work-list, .advantage-list, .social-heder, .list-contacts, .nav-list, .list-social {
+  list-style: none;
 }
 
 /* @media screen and (min-width: 480px) {
@@ -132,8 +138,8 @@ button {
 }
 
 .header {
-  /*   position: relative; */
   border-bottom: 1px solid #ececec;
+  padding: 0;
 }
 
 .container-header {
@@ -327,6 +333,14 @@ button {
             flex-direction: column-reverse;
   }
 }
+@media screen and (min-width: 1200px) {
+  .list-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
 
 .list-contacts__item:not(:last-child) {
   margin-bottom: 32px;
@@ -335,6 +349,12 @@ button {
   .list-contacts__item:not(:last-child) {
     margin-top: 10px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-contacts__item:not(:last-child) {
+    margin-top: 0;
+    margin-left: 30px;
   }
 }
 
@@ -808,18 +828,23 @@ button {
 }
 
 /* Секция "Подход к работе" */
-.advantage {
-  padding: 60px 15px;
-}
-
 .advantage-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
   padding-left: 0px;
 }
 @media screen and (min-width: 768px) {
   .advantage-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -829,32 +854,20 @@ button {
 }
 
 .advantage-list__item {
-  width: auto;
-}
-@media screen and (max-width: 767px) {
-  .advantage-list__item {
-    outline: 1px solid orange;
-  }
-  .advantage-list__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .advantage-list__item {
-    max-width: 354px;
-    height: 223px;
+    width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
-  .advantage-list__item:nth-child(-n+2) {
-    margin-bottom: 30px;
-  }
-  .advantage-list__item:nth-child(odd) {
-    margin-right: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .advantage-list__item {
+    width: calc((100% - 90px) / 4);
   }
 }
 
-/* .advantage-list__item {
-  &:not(:first-child) {margin-left: 30px;}
-} */
 .advantage-list__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -876,7 +889,11 @@ button {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .advantage-list__title {
+    text-align: center;
+  }
 }
 
 .advantage-list__text {
@@ -887,9 +904,17 @@ button {
 .area-​​work {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .area-​​work {
+    display: block;
+    padding: 0 15px 94px;
+  }
+}
 
 .area-​​work-list {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 0px;
 }
 
@@ -936,16 +961,43 @@ button {
 }
 
 .list-teem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 0px;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .list-teem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .list-teem__card {
-  margin-bottom: 15px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-background-color);
   text-align: center;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+@media screen and (min-width: 768px) {
+  .list-teem__card {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-teem__card {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 /* .list-teem__card {
@@ -984,18 +1036,21 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients-list__item {
   width: calc((100% - 30px) / 2);
-  height: 92px;
-  margin-bottom: 30px;
 }
-.clients-list__item:nth-child(odd) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
-.clients-list__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 /* .clients-list__item {
@@ -1015,6 +1070,7 @@ button {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  padding: 16px 0;
   color: #afb1b8;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);

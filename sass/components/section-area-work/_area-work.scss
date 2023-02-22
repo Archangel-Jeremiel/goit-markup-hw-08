@@ -1,20 +1,17 @@
 .area-​​work {
   @extend %section;
   display: none;
-}
 
-.area-​​work__container {
-  @extend %container;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding: 0 15px 94px;
+  }
 }
 
 .area-​​work-list {
   @extend %list;
-  display: block;
+  display: flex;
   padding-left: 0px;
-}
-
-.area-​​work__container {
-  @extend %container;
 }
 
 .area-​​work__item {

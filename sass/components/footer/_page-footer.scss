@@ -1,9 +1,10 @@
 .footer {
+    @extend %section;
+
     background-color: var(--hero-footer-background-color);
 }
 
 .container-footer {
-    @extend %container;
     display: block;
     align-items: baseline;
 }

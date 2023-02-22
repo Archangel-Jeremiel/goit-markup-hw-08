@@ -10,6 +10,10 @@
     margin-left: auto;
     flex-direction: column-reverse;
   }
+
+  @media screen and (min-width:1200px) {
+    flex-direction: row-reverse;
+  }
 }
 
 .list-contacts__item {
@@ -19,6 +23,13 @@
     &:not(:last-child) {
       margin-top: 10px;
       margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    &:not(:last-child) {
+      margin-top: 0;
+      margin-left: 30px;
     }
   }
 }
