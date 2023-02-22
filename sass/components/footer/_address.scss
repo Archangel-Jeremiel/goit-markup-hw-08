@@ -1,3 +1,10 @@
+.container-address {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 76px;
+  }
+  
+}
+
 .address {
   margin-bottom: 60px;
   
@@ -5,6 +12,11 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .address__list {
