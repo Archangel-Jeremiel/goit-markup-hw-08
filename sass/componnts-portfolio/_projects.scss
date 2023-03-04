@@ -39,9 +39,8 @@
 }
 
 .product-action__foto {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  display: flex;
+  width: 100%;
 }
 
 .product-action__description {
