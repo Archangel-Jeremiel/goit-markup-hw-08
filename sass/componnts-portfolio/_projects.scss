@@ -5,7 +5,7 @@
 }
 .list-projects {
   @extend %list;
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   padding-left: 0px;
 }
@@ -39,7 +39,6 @@
 }
 
 .product-action__foto {
-  display: flex;
   width: 100%;
 }
 
