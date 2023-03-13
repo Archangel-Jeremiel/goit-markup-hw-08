@@ -9,23 +9,27 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (max-width:468px) {
-  .list-filter__item {
-    &:nth-last-child(-n + 2) {margin-top: 15px;}
-  }
-}
-
-@media screen and (max-width:599px) {
-  .list-filter__item {
-    &:nth-last-child(1) {margin-top: 15px;}
+    gap: 8px;
   }
 }
 
 .list-filter__item {
-  &:not(:last-child) {margin-right: 8px;}
+  @media screen and (max-width:468px) {
+      &:nth-last-child(-n + 2) {margin-top: 15px;}
+  }
+  
+  @media screen and (max-width:599px) {
+      &:nth-last-child(1) {margin-top: 15px;}
+  }
+
+  @media screen and (max-width:767px) {
+    &:not(:last-child) {margin-right: 8px;}
+}
+
+  @media screen and (min-width:768px) {
+    &:last-child {margin-right: auto;}
+    &:first-child {margin-left: auto;}
+  } 
 }
 
 .list-filter__button {
