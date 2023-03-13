@@ -70,14 +70,14 @@ button {
   margin: -1px;
 }
 
-.footer, .clients, .teem, .area-​​work, .advantage, .header {
+.projects, .footer, .clients, .teem, .area-​​work, .advantage, .header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
 }
 @media screen and (min-width: 1200px) {
-  .footer, .clients, .teem, .area-​​work, .advantage, .header {
+  .projects, .footer, .clients, .teem, .area-​​work, .advantage, .header {
     padding: 94px 15px;
   }
 }
@@ -1380,6 +1380,13 @@ button {
   padding-left: 0px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .list-filter {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 @media screen and (max-width: 468px) {
   .list-filter__item:nth-last-child(-n+2) {
@@ -1419,18 +1426,30 @@ button {
 .container-filter {
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 15px;
 }
 
 .list-projects {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0px;
+  gap: 30px;
 }
 
 .list-projects__item {
-  margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .list-projects__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-projects__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 /* .list-projects__item {

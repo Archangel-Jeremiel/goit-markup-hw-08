@@ -1,17 +1,29 @@
+.projects {
+  @extend %section;
+}
+
 .container-filter {
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 15px;
 }
 .list-projects {
   @extend %list;
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
+  gap: 30px;
 }
 
 .list-projects__item {
-  margin-bottom: 30px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px)/3);
+  }
 }
 
 /* .list-projects__item {
