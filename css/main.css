@@ -45,7 +45,7 @@ button {
   background-color: var(--primary-background-color);
 }
 
-.area-​​work__title,
+.area-work__title,
 .container-teem__title,
 .container-clients__title {
   margin-bottom: 30px;
@@ -70,20 +70,20 @@ button {
   margin: -1px;
 }
 
-.projects, .footer, .clients, .teem, .area-​​work, .advantage, .header {
+.projects, .footer, .clients, .teem, .area-work, .advantage, .header {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
 }
 @media screen and (min-width: 1200px) {
-  .projects, .footer, .clients, .teem, .area-​​work, .advantage, .header {
+  .projects, .footer, .clients, .teem, .area-work, .advantage, .header {
     padding: 94px 15px;
   }
 }
 
 /* Добавим общий стиль на списки, кнопки*/
-.list-projects, .list-filter, .address__list, .clients-list, .list-teem, .area-​​work-list, .advantage-list, .social-heder, .list-contacts, .nav-list, .list-social {
+.list-projects, .list-filter, .address__list, .clients-list, .list-teem, .area-work-list, .advantage-list, .social-heder, .list-contacts, .nav-list, .list-social {
   list-style: none;
 }
 
@@ -900,38 +900,38 @@ button {
   line-height: 1.71;
 }
 
-.area-​​work {
+.area-work {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .area-​​work {
+  .area-work {
     display: block;
     padding: 0 15px 94px;
   }
 }
 
-.area-​​work-list {
+.area-work-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 0px;
 }
 
-.area-​​work__item:not(:last-child) {
+.area-work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.area-​​work-thumb {
+.area-work-thumb {
   position: relative;
 }
 
-.area-​​work-thumb__image {
+.area-work-thumb__image {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.area-​​work-thumb__box {
+.area-work-thumb__box {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -946,7 +946,7 @@ button {
   opacity: 0.8;
 }
 
-.area-​​work-thumb__text {
+.area-work-thumb__text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1211,6 +1211,7 @@ button {
   .container-social__title,
   .container-subscription__title {
     text-align: left;
+    display: block;
   }
 }
 
@@ -1346,8 +1347,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 10px 28px;
-  margin-right: auto;
-  margin-left: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
